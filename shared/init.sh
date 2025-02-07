@@ -38,10 +38,15 @@ info "python3 installed"
 
 info "init complete"
 
-port=8001 # TODO use env var
+default=8000
+if [ -z "$PORT" ]; then
+    error "PORT env var not set, defaulting to $default. This could cause collisions!"
+fi
+PORT=${PORT:-$default}
+
 mkdir -p /self
-echo "Hello, world! I'm $CONTAINER_NAME!" > /self/me.txt
-info "starting http server at port $port"
-if ! python3 -m http.server "$port" --directory "/self"; then
+echo "Hello, world! I'm $CONTAINER_NAME!" > /self/whoami
+info "starting http server at port $PORT"
+if ! python3 -m http.server "$PORT" --directory "/self"; then
     error "python3 -m http.server failed"
 fi

@@ -16,3 +16,60 @@
 2025-02-07.00:55:24 INF [node-2] python3 installed
 2025-02-07.00:55:24 INF [node-2] init complete
 2025-02-07.00:55:24 INF [node-2] starting http server at port 8001
+2025-02-07.01:03:58 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:04:03 INF [node-2] apt-get updated
+2025-02-07.01:04:08 INF [node-2] curl installed
+2025-02-07.01:04:13 INF [node-2] python3 installed
+2025-02-07.01:04:13 INF [node-2] init complete
+2025-02-07.01:04:13 INF [node-2] starting http server at port 8001
+2025-02-07.01:09:01 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:09:06 INF [node-2] apt-get updated
+2025-02-07.01:09:10 INF [node-2] curl installed
+2025-02-07.01:09:16 INF [node-2] python3 installed
+2025-02-07.01:09:16 INF [node-2] init complete
+2025-02-07.01:09:16 INF [node-2] starting http server at port 8002
+2025-02-07.01:11:53 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:11:57 INF [node-2] apt-get updated
+2025-02-07.01:12:02 INF [node-2] curl installed
+2025-02-07.01:12:08 INF [node-2] python3 installed
+2025-02-07.01:12:08 INF [node-2] init complete
+2025-02-07.01:12:08 INF [node-2] starting http server at port 8002
+2025-02-07.01:13:26 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:13:30 INF [node-2] apt-get updated
+2025-02-07.01:13:35 INF [node-2] curl installed
+2025-02-07.01:13:40 INF [node-2] python3 installed
+2025-02-07.01:13:40 INF [node-2] init complete
+2025-02-07.01:13:40 INF [node-2] starting http server at port 8002
+2025-02-07.01:18:25 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:18:30 INF [node-2] apt-get updated
+2025-02-07.01:18:35 INF [node-2] curl installed
+2025-02-07.01:18:40 INF [node-2] python3 installed
+2025-02-07.01:18:40 INF [node-2] init complete
+2025-02-07.01:18:40 INF [node-2] starting http server at port 8002
+2025-02-07.01:20:15 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:20:20 INF [node-2] apt-get updated
+2025-02-07.01:20:25 INF [node-2] curl installed
+2025-02-07.01:20:30 INF [node-2] python3 installed
+2025-02-07.01:20:30 INF [node-2] init complete
+2025-02-07.01:20:30 INF [node-2] starting http server at port 8002
+2025-02-07.01:29:01 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:29:05 INF [node-2] apt-get updated
+2025-02-07.01:29:10 INF [node-2] curl installed
+2025-02-07.01:29:16 INF [node-2] python3 installed
+2025-02-07.01:29:16 INF [node-2] init complete
+2025-02-07.01:29:16 INF [node-2] starting http server at port 8002
+2025-02-07.01:31:49 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:31:54 INF [node-2] apt-get updated
+2025-02-07.01:31:59 INF [node-2] curl installed
+2025-02-07.01:32:04 INF [node-2] python3 installed
+2025-02-07.01:32:04 INF [node-2] init complete
+2025-02-07.01:32:04 INF [node-2] starting http server at port 8002
+2025-02-07.01:33:47 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:33:52 INF [node-2] apt-get updated
+2025-02-07.01:33:57 INF [node-2] curl installed
+2025-02-07.01:39:37 INF [node-2] starting ./shared/init.sh
+2025-02-07.01:39:42 INF [node-2] apt-get updated
+2025-02-07.01:39:46 INF [node-2] curl installed
+2025-02-07.01:39:52 INF [node-2] python3 installed
+2025-02-07.01:39:52 INF [node-2] init complete
+2025-02-07.01:39:52 INF [node-2] starting http server at port 8002
