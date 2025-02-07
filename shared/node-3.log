@@ -1,0 +1,18 @@
+2025-02-07.00:40:14 INF [node-3] starting ./shared/init.sh
+2025-02-07.00:40:18 INF [node-3] apt-get updated
+2025-02-07.00:40:23 INF [node-3] curl installed
+2025-02-07.00:40:29 INF [node-3] python3 installed
+2025-02-07.00:40:29 INF [node-3] init complete
+2025-02-07.00:40:29 INF [node-3] starting http server at port 8001
+2025-02-07.00:44:16 INF [node-3] starting ./shared/init.sh
+2025-02-07.00:44:21 INF [node-3] apt-get updated
+2025-02-07.00:44:25 INF [node-3] curl installed
+2025-02-07.00:44:30 INF [node-3] python3 installed
+2025-02-07.00:44:30 INF [node-3] init complete
+2025-02-07.00:44:30 INF [node-3] starting http server at port 8001
+2025-02-07.00:55:10 INF [node-3] starting ./shared/init.sh
+2025-02-07.00:55:15 INF [node-3] apt-get updated
+2025-02-07.00:55:20 INF [node-3] curl installed
+2025-02-07.00:55:25 INF [node-3] python3 installed
+2025-02-07.00:55:25 INF [node-3] init complete
+2025-02-07.00:55:25 INF [node-3] starting http server at port 8001
