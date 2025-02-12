@@ -4,7 +4,7 @@ Tools and docs for setting up wireguard.
 
 ## contents
 - [`bin`](./bin/)
-  - [`pods.ah`](./bin/pods.sh) - launches a few Ubuntu nodes with init.sh script
+  - [`pods.sh`](./bin/pods.sh) - launches a few Ubuntu nodes with init.sh script
 - [`shared`](./shared/) - shared volume mounted to all containers for accessing init.sh script and writing to log files
 
 ## reaching a node
