@@ -81,4 +81,3 @@ podman ps -a
 echo "Login to a node with:"
 echo "  podman exec -it <node> bash"
 sleep 600
-
