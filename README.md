@@ -10,5 +10,5 @@ Tools and docs for setting up wireguard.
 ## reaching a node
 Each node will advertise itself on port `800x`, where `x` is the node number. For example, `node-2` can be reached at:
 ```sh
-curl localhost:8002/self/me.txt
+curl localhost:8002/whoami
 ```

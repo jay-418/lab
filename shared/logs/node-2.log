@@ -1,0 +1,12 @@
+2025-02-12.22:39:41 INF [node-2] starting ./shared/init.sh
+2025-02-12.22:39:46 INF [node-2] apt-get updated
+2025-02-12.22:39:52 INF [node-2] curl installed
+2025-02-12.22:39:58 INF [node-2] python3 installed
+2025-02-12.22:40:08 INF [node-2] wireguard keys generated: tttHPnCV2ip/Rtb8kJnTXl50SEBNpPRNLyEHW2v+PQA=
+2025-02-12.22:40:08 INF [node-2] OPooEANDLm/dfpsaiA2RpYvj5y1UL0RiPttrYp8Qv04=
+2025-02-12.22:40:08 INF [node-2] wireguard setup complete
+2025-02-12.22:40:08 INF [node-2] adding allowed ip: D3rG1WIvTMKK2TrhbCP8USlhrT4OWjWBZFhd3IuljRc=
+2025-02-12.22:40:08 INF [node-2] adding allowed ip: tttHPnCV2ip/Rtb8kJnTXl50SEBNpPRNLyEHW2v+PQA=
+2025-02-12.22:40:08 INF [node-2] adding allowed ip: G81RQbhpSZVq2M+2lMV7HkhD+7viQiDz3i7PAQMMiyw=
+2025-02-12.22:40:08 INF [node-2] init complete
+2025-02-12.22:40:08 INF [node-2] starting http server at port 8002

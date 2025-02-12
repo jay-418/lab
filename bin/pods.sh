@@ -1,28 +1,33 @@
 #!/usr/bin/env bash
 
+if ! ./install_podman.sh; then
+    echo "Failed to install podman"
+    exit 1
+fi
+
 network_name="network-$(date +%s)"
 echo "Creating network: $network_name"
 
-
-
 podman network create "$network_name"
-
 
 node_qty=3
 for i in $(seq 1 $node_qty); do
     name="node-$i"
+    port=8$(printf "%03d" "$i")
     nodes+=("$name")
     podman run -d \
-        --name $name \
-        -p 800"$i":800"$i" \
+        --name "$name" \
+        -p "$port":"$port" \
+        --privileged \
         --env CONTAINER_NAME="$name" \
+        --env PORT="$port" \
         --network "$network_name" \
         --volume ./shared:/shared \
         ubuntu bash -c \
             "chmod +x /shared/init.sh; \
             ./shared/init.sh; sleep infinity"
 done
-trap 'kill_all' EXIT
+trap 'kill_all' EXIT INT
 
 # prxy_qty=1
 
@@ -36,11 +41,23 @@ trap 'kill_all' EXIT
 #     ubuntu bash -c \
 #     "chmod +x /shared/init.sh; ./shared/init.sh; python3 -m http.server 8888 --directory /shared; sleep infinity"
 
+kill_all () {
+    echo "Stopping and removing containers and networks, this may take a few seconds..."
+    for node in "${nodes[@]}"; do
+        stop_rm "$node" &
+    done
+    wait # don't kill network until all nodes are stopped
+    podman network rm "$network_name"
+}
 
+stop_rm () {
+    podman stop "$1" && podman rm "$1"
+}
 
 wait_for_start() {
+    started=$(date +%s)
     nodes_qty=${#nodes[@]}
-    echo "nodes ($nodes_qty): ${nodes[*]}"
+    # echo "nodes ($nodes_qty): ${nodes[*]}"
     nodes_up=0
     for container_name in "${nodes[@]}"; do
         if podman ps -a | grep -q container_name; then
@@ -52,26 +69,16 @@ wait_for_start() {
             fi
         fi    
     done
-    echo "Waiting for containers to start... ($nodes_up of $nodes_qty)"
+    now=$(date +%s)
+    elapsed=$((now - started))
+    echo "${elapsed}s - Waiting for containers to start... ($nodes_up of $nodes_qty)"
     sleep 1
 }
+
 wait_for_start
 echo "All containers are running:"
-
 podman ps -a
-
-# podman run -d --name proxy --network $network_name ubuntu sleep infinity
-# podman run -d --name outside --network $network_name ubuntu sleep infinity
-
-# # Log in to the 'inside' container
-podman exec -it "${nodes[0]}" bash
-
-kill_all () {
-    echo "Stopping and removing containers, this may take a few seconds..."
-    for node in "${nodes[@]}"; do
-        podman stop "$node"
-        podman rm "$node"
-    done
-    podman network rm "$network_name"
-}
+echo "Login to a node with:"
+echo "  podman exec -it <node> bash"
+sleep 600
 
