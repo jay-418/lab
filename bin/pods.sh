@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-if ! ./install_podman.sh; then
+if [[ "$DEBUG" == 1 ]]; then
+	set -x
+fi
+
+if ! ./bin/install_podman.sh; then
     echo "Failed to install podman"
     exit 1
 fi

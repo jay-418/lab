@@ -1,12 +1,12 @@
-2025-02-12.22:39:41 INF [node-1] starting ./shared/init.sh
-2025-02-12.22:39:46 INF [node-1] apt-get updated
-2025-02-12.22:39:52 INF [node-1] curl installed
-2025-02-12.22:39:58 INF [node-1] python3 installed
-2025-02-12.22:40:07 INF [node-1] wireguard keys generated: D3rG1WIvTMKK2TrhbCP8USlhrT4OWjWBZFhd3IuljRc=
-2025-02-12.22:40:07 INF [node-1] SDLQPcbOSI/ECLV7ikuH0tGfCD57R3PBlsmzn61oe0c=
-2025-02-12.22:40:07 INF [node-1] wireguard setup complete
-2025-02-12.22:40:07 INF [node-1] adding allowed ip: D3rG1WIvTMKK2TrhbCP8USlhrT4OWjWBZFhd3IuljRc=
-2025-02-12.22:40:07 INF [node-1] adding allowed ip: qazjUZG2TPH9dmAaiaDokTfZ1tV2ORSFjhi24VCyYB4=
-2025-02-12.22:40:07 INF [node-1] adding allowed ip: G81RQbhpSZVq2M+2lMV7HkhD+7viQiDz3i7PAQMMiyw=
-2025-02-12.22:40:07 INF [node-1] init complete
-2025-02-12.22:40:07 INF [node-1] starting http server at port 8001
+2025-02-13.02:03:19 INF [node-1] starting ./shared/init.sh
+2025-02-13.02:03:25 INF [node-1] apt-get updated
+2025-02-13.02:03:30 INF [node-1] curl installed
+2025-02-13.02:03:36 INF [node-1] python3 installed
+2025-02-13.02:03:46 INF [node-1] wireguard keys generated: v6y+QUib5+pc4byk92HZOx3f+nZ2vzp3O7PsBYW97xI=
+2025-02-13.02:03:46 INF [node-1] 4LM55Wn7z3nCPNUJJcjyzpF+bcGQtul/M91WTj3ngGg=
+2025-02-13.02:03:46 INF [node-1] wireguard setup complete
+2025-02-13.02:03:46 INF [node-1] adding allowed ip: v6y+QUib5+pc4byk92HZOx3f+nZ2vzp3O7PsBYW97xI=
+2025-02-13.02:03:46 INF [node-1] adding allowed ip: z1thv/+CXf1TeTrfU6JusCO0FZN/r82EBTDWqmeHxUg=
+2025-02-13.02:03:46 INF [node-1] adding allowed ip: ycp7hK22EfZd3ZZ54JE/G1WeymVtHlLaphrk7WCFe1o=
+2025-02-13.02:03:46 INF [node-1] init complete
+2025-02-13.02:03:46 INF [node-1] starting http server at port 8001
